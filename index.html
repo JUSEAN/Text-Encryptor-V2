@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/png" href="IMG/favicon.png" sizes="32x32">
+</head>
+<body>
+    <div id="encriptador-container">
+        <h1>Encriptador JSN</h1>
+        <textarea id="input" placeholder="Escriba el texto a encriptar aquí"></textarea>
+        <input type="password" id="password" placeholder="Ingrese la key de encriptación aquí">
+        <textarea id="output" placeholder="El resultado de la encriptación se mostrará aquí"></textarea>
+        <button id="encrypt-button" onclick="encrypt()">Encriptar</button>
+        <button id="decrypt-button" onclick="decrypt()">Desencriptar</button>
+        <button type="button" onclick="limpiarFormulario()">Limpiar</button>
+        <button onclick="copyToClipboard()">Copiar</button>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
